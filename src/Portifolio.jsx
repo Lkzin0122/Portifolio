@@ -1,14 +1,16 @@
 import './App.css'
 import todoListImg from './assets/imgs/ToDo List.png'
 import safeSolImg from './assets/imgs/SafeSol.png'
+import Curriculo from './assets/pdf/Curriculo_Lucas.pdf?url'
 
 function Portifolio() {
-  return (
+  return (  
     <div className="container">
       <h1 className='Title'>Olá me chamo <br /> Lucas Bitencourt</h1>
       <p className='subtitle'>Técnico em Informática | Desenvolvedor Full Stack Jr | Java • React • Spring Boot • Flutter • SQL</p>
       
       <div className="contact-buttons">
+        <a className="contact-btn Curriculo" href={Curriculo} download target="_blank" rel="noopener noreferrer">Currículo</a>
         <a className="contact-btn linkedin" href="https://www.linkedin.com/in/bitencourtlucas/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a className="contact-btn github" href="https://github.com/Lkzin0122" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a className="contact-btn instagram" href="https://www.instagram.com/luczz_bt/" target="_blank" rel="noopener noreferrer">Instagram</a>

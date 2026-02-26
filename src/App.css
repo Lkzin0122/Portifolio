@@ -13,6 +13,13 @@
   margin: 0;
   padding: 0;
 }
+
+a:focus,
+a:active,
+button:focus,
+button:active {
+  outline: none !important;
+}
 .container {
   width: 100%;
   padding: 20px;
@@ -52,6 +59,16 @@
   font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.3s;
+  outline: none;
+}
+
+.contact-btn:focus {
+  outline: none;
+  color: white;
+}
+
+.contact-btn:hover {
+  color: white;
 }
 
 .contact-btn.linkedin {
@@ -80,6 +97,14 @@
   background: linear-gradient(45deg, #d67d2d 0%, #c95a33 25%, #b91f38 50%, #a81d57 75%, #9a1472 100%);
   transform: translateY(-2px);
 }
+.contact-btn.Curriculo {
+  background-color: #dc2626;
+}
+
+.contact-btn.Curriculo:hover {
+  background-color: #b91c1c;
+  transform: translateY(-2px);
+}
 
 .github-link {
   padding: 0px 15px;
@@ -94,11 +119,11 @@
    border: 6px solid #00d9ff;
    width: 300px;
    height: 300px;
+   transition: transform 0.3s ease;
 }
 
 .github-image:hover {
-  animation: normal 0.6s linear;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .About {
   font-size: 1.1rem;
