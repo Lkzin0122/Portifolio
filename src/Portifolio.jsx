@@ -83,6 +83,10 @@ function Portifolio() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
             <span>Git</span>
           </div>
+          <div className="skill-item">
+            <img src="https://vitejs.dev/logo.svg" alt="Vite" />
+            <span>Vite</span>
+          </div>
         </div>
       </div>
      
