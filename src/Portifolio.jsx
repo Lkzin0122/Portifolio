@@ -6,7 +6,7 @@ function Portifolio() {
   return (
     <div className="container">
       <h1 className='Title'>Olá me chamo <br /> Lucas Bitencourt</h1>
-      <p className='subtitle'>Técnico em Informática | Desenvolvedor de Software | Java • React • Spring Boot • Flutter</p>
+      <p className='subtitle'>Técnico em Informática | Desenvolvedor Full Stack Jr | Java • React • Spring Boot • Flutter • SQL</p>
       
       <div className="contact-buttons">
         <a className="contact-btn linkedin" href="https://www.linkedin.com/in/bitencourtlucas/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
