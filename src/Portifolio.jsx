@@ -1,4 +1,6 @@
 import './App.css'
+import todoListImg from './assets/imgs/ToDo List.png'
+import safeSolImg from './assets/imgs/SafeSol.png'
 
 function Portifolio() {
   return (
@@ -7,9 +9,9 @@ function Portifolio() {
       <p className='subtitle'>Técnico em Informática | Desenvolvedor de Software | Java • React • Spring Boot • Flutter</p>
       
       <div className="contact-buttons">
-        <a className="contact-btn linkedin" href="https://www.linkedin.com/in/lucas-bitencourt-65407524b/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a className="contact-btn linkedin" href="https://www.linkedin.com/in/bitencourtlucas/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a className="contact-btn github" href="https://github.com/Lkzin0122" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a className="contact-btn instagram" href="https://www.instagram.com/lucasbitencourt_/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a className="contact-btn instagram" href="https://www.instagram.com/luczz_bt/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
 
       <a className="github-link" href="https://github.com/Lkzin0122">
@@ -86,10 +88,16 @@ function Portifolio() {
         <h2>Projetos</h2>
         <div className="projects-grid">
           <div className="project-item">
-            <a href="https://github.com/Lkzin0122/safe_solutions_flutter">Safe Solutions - Flutter</a>
+            <a href="https://github.com/Lkzin0122/safe_solutions_flutter">
+              <img src={safeSolImg} alt="Safe Solutions" className="project-img mobile-format" />
+              <span>Safe Solutions - Flutter</span>
+            </a>
           </div>
           <div className="project-item">
-            <a href="https://github.com/Lkzin0122/to-do-list">To-Do List</a>
+            <a href="https://github.com/Lkzin0122/to-do-list">
+              <img src={todoListImg} alt="To-Do List" className="project-img" />
+              <span>To-Do List</span>
+            </a>
           </div>
         </div>
       </div>
