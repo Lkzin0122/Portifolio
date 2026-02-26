@@ -17,22 +17,6 @@ Portfólio pessoal desenvolvido com React + Vite, apresentando minhas habilidade
 - Links para projetos no GitHub
 - Botões de contato para LinkedIn, GitHub e Instagram
 
-## 📦 Instalação
-
-```bash
-# Clone o repositório
-git clone https://github.com/Lkzin0122/portfolio.git
-
-# Entre no diretório
-cd portfolio
-
-# Instale as dependências
-npm install
-
-# Execute o projeto
-npm run dev
-```
-
 ## 📫 Contato
 
 - LinkedIn: [Lucas Bitencourt](https://www.linkedin.com/in/lucas-bitencourt-65407524b/)
@@ -41,4 +25,4 @@ npm run dev
 
 ---
 
-Desenvolvido com ❤️ por Lucas Bitencourt
+Desenvolvido por Lucas Bitencourt
