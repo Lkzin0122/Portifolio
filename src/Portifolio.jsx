@@ -13,7 +13,6 @@ function Portifolio() {
         <a className="contact-btn Curriculo" href={Curriculo} download target="_blank" rel="noopener noreferrer">Currículo</a>
         <a className="contact-btn linkedin" href="https://www.linkedin.com/in/bitencourtlucas/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a className="contact-btn github" href="https://github.com/Lkzin0122" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a className="contact-btn instagram" href="https://www.instagram.com/luczz_bt/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
 
       <a className="github-link" href="https://github.com/Lkzin0122">
