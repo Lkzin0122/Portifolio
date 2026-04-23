@@ -1,0 +1,205 @@
+.container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.Title {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: #aaaaaa;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Foto de perfil */
+.github-link {
+  margin: 28px 0 20px;
+}
+
+.github-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 3px solid #444;
+  object-fit: cover;
+  transition: border-color 0.2s;
+}
+
+.github-image:hover {
+  border-color: #ffffff;
+}
+
+/* Botões de contato */
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-btn-Curriculo,
+.contact-btn-linkedin,
+.contact-btn-github {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #555;
+  padding: 9px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.contact-btn-Curriculo:hover,
+.contact-btn-linkedin:hover,
+.contact-btn-github:hover {
+  background-color: #ffffff;
+  color: #1E1E1E;
+  border-color: #ffffff;
+}
+
+/* Sobre mim */
+.about-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 40px 0 12px;
+  align-self: flex-start;
+}
+
+.About {
+  color: #bbbbbb;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: left;
+}
+
+.About p p {
+  margin-top: 12px;
+}
+
+/* Skills */
+.skills-section {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.skills-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 16px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background-color: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 14px 8px;
+  transition: border-color 0.2s;
+}
+
+.skill-item:hover {
+  border-color: #666;
+}
+
+.skill-item img {
+  width: 36px;
+  height: 36px;
+}
+
+.skill-item span {
+  font-size: 11px;
+  color: #aaaaaa;
+  text-align: center;
+}
+
+/* Projetos */
+.projects-section {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.projects-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.project-item {
+  background-color: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.project-item:hover {
+  border-color: #666;
+}
+
+.project-item a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.project-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.mobile-format {
+  object-fit: contain;
+  background-color: #1a1a1a;
+}
+
+.project-item span {
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #cccccc;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  margin-top: 60px;
+  padding: 20px 0;
+  border-top: 1px solid #2a2a2a;
+  text-align: center;
+}
+
+.footer-text {
+  color: #555;
+  font-size: 13px;
+  line-height: 1.8;
+}
