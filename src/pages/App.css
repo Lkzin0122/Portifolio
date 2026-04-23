@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 60px auto;
   padding: 0 20px;
 }
@@ -60,15 +60,24 @@
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
-  transition: background-color 0.2s, border-color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
-.contact-btn-Curriculo:hover,
-.contact-btn-linkedin:hover,
+.contact-btn-Curriculo:hover {
+  opacity: 0.9;
+  background-color: #555;
+  color: #ffffff;
+}
+.contact-btn-linkedin:hover {
+  opacity: 0.9;
+  background-color: #0d58ae;
+  color: #ffffff;
+}
+
 .contact-btn-github:hover {
-  background-color: #ffffff;
-  color: #1E1E1E;
-  border-color: #ffffff;
+  opacity: 0.9;
+  background-color: #000;
+  color: #ffffff;
 }
 
 /* Sobre mim */
@@ -81,13 +90,13 @@
 
 .About {
   color: #bbbbbb;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.7;
   text-align: left;
 }
 
 .About p p {
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 /* Skills */
@@ -181,6 +190,12 @@
 .mobile-format {
   object-fit: contain;
   background-color: #1a1a1a;
+}
+.project-img.spotify-lyrics {
+  object-fit: contain;
+  background-color: #1a1a1a;
+  height: 150px;
+  width: 100%;
 }
 
 .project-item span {

@@ -1,6 +1,7 @@
 import '../pages/App.css'
 import todoListImg from '../assets/imgs/ToDo List.png'
 import safeSolImg from '../assets/imgs/SafeSol.png'
+import spotifyLyricsImg from '../assets/imgs/Spotify.png' 
 import Curriculo from '../assets/pdf/Curriculo_Lucas.pdf?url'
 
 function Portifolio() {
@@ -33,9 +34,10 @@ function Portifolio() {
         
         <p>Além disso, participei de projetos práticos 
         que me permitiram aplicar meus conhecimentos em situações reais, desenvolvendo habilidades de resolução 
-        de problemas e trabalho em equipe.</p> Estou sempre buscando aprender novas tecnologias e aprimorar minhas 
+        de problemas e trabalho em equipe. Estou sempre buscando aprender novas tecnologias e aprimorar minhas 
         habilidades para me tornar um profissional cada vez mais completo e preparado para os desafios do mercado 
         de trabalho.
+        </p>
       </p>
       </div>
        
@@ -91,6 +93,11 @@ function Portifolio() {
             <img src="https://vitejs.dev/logo.svg" alt="Vite" />
             <span>Vite</span>
           </div>
+          <div className="skill-item">
+            <img src="https://python.org/favicon.ico" alt="Python" />
+            <span>Python</span>
+          
+          </div>
         </div>
       </div>
      
@@ -98,17 +105,23 @@ function Portifolio() {
         <h2>Projetos Desenvolvidos</h2>
         <div className="projects-grid">
           <div className="project-item">
-            <a href="https://github.com/Lkzin0122/safe_solutions_flutter">
+            <a href="https://github.com/Lkzin0122/safe_solutions_flutter" target="_blank" rel="noopener noreferrer">
               <img src={safeSolImg} alt="Safe Solutions" className="project-img mobile-format" />
               <span>Safe Solutions - Flutter</span>
             </a>
           </div>
           <div className="project-item">
-            <a href="https://github.com/Lkzin0122/to-do-list">
+            <a href="https://github.com/Lkzin0122/to-do-list" target="_blank" rel="noopener noreferrer">
               <img src={todoListImg} alt="To-Do List" className="project-img" />
               <span>To-Do List</span>
             </a>
           </div>
+           <div className="project-item">
+            <a href="https://github.com/Lkzin0122/Spotify_Lyrics" target="_blank" rel="noopener noreferrer">
+              <img src={spotifyLyricsImg} alt="Spotify Lyrics" className="project-img spotify-lyrics" />
+              <span>Spotify Lyrics</span>
+            </a>
+          </div>  
         </div>
       </div>
 
