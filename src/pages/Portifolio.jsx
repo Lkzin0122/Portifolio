@@ -1,7 +1,7 @@
 import '../pages/App.css'
 import todoListImg from '../assets/imgs/ToDo List.png'
 import safeSolImg from '../assets/imgs/SafeSol.png'
-import spotifyLyricsImg from '../assets/imgs/Spotify.png' 
+import spotifyLyricsImg from '../assets/imgs/spotify.png' 
 import Curriculo from '../assets/pdf/Curriculo_Lucas.pdf?url'
 
 function Portifolio() {
