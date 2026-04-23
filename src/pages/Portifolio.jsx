@@ -1,14 +1,15 @@
 import '../pages/App.css'
 import todoListImg from '../assets/imgs/ToDo List.png'
 import safeSolImg from '../assets/imgs/SafeSol.png'
-import spotifyLyricsImg from '../assets/imgs/spotify.png' 
+import spotifyLyricsImg from '../assets/imgs/spotify.png'
+import Vexorimg from '../assets/imgs/Vexor.png' 
 import Curriculo from '../assets/pdf/Curriculo_Lucas.pdf?url'
 
 function Portifolio() {
   return (  
     <div className="container">
 
-      <a className="github-link" href="https://github.com/Lkzin0122">
+      <a className="github-link" href="https://github.com/Lkzin0122" target="_blank" rel="noopener noreferrer">
       <img className="github-image" src="https://github.com/Lkzin0122.png" alt="Foto Lucas Bitencourt" />
       </a>
 
@@ -102,7 +103,7 @@ function Portifolio() {
       </div>
      
       <div className="projects-section">
-        <h2>Projetos Desenvolvidos</h2>
+        <h2>Projetos</h2>
         <div className="projects-grid">
           <div className="project-item">
             <a href="https://github.com/Lkzin0122/safe_solutions_flutter" target="_blank" rel="noopener noreferrer">
@@ -121,7 +122,13 @@ function Portifolio() {
               <img src={spotifyLyricsImg} alt="Spotify Lyrics" className="project-img spotify-lyrics" />
               <span>Spotify Lyrics</span>
             </a>
-          </div>  
+          </div> 
+          <div className="project-item">
+            <a href="https://github.com/Lkzin0122/Vexor-Project" target="_blank" rel="noopener noreferrer">
+              <img src={Vexorimg} alt="Vexor Project" className="project-img mobile-format" />
+              <span>Vexor Project- Em desenvolvim ento</span>
+            </a>
+          </div> 
         </div>
       </div>
 
