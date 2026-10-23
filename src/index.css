@@ -6,15 +6,12 @@
 }
 
 html {
-  background: #080b12;
+  background: var(--bg, #080b12);
   scroll-behavior: smooth;
 }
 
 body {
-  background:
-    radial-gradient(circle at 10% 0%, rgba(46, 211, 183, 0.09), transparent 28rem),
-    radial-gradient(circle at 90% 18%, rgba(125, 92, 246, 0.1), transparent 30rem),
-    #080b12;
-  color: #f5f7fb;
+  background: var(--bg, #080b12);
+  color: var(--text, #f5f7fb);
   min-height: 100vh;
 }
