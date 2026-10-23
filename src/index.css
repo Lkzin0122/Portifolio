@@ -1,14 +1,20 @@
-*{
-  font-family: "Manrope", sans-serif;
+* {
+  font-family: "Manrope", "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
-  background-color: #1E1E1E;
-  color: #FFFFFF;
-  min-height: auto;
+html {
+  background: #080b12;
+  scroll-behavior: smooth;
 }
 
-
+body {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(46, 211, 183, 0.09), transparent 28rem),
+    radial-gradient(circle at 90% 18%, rgba(125, 92, 246, 0.1), transparent 30rem),
+    #080b12;
+  color: #f5f7fb;
+  min-height: 100vh;
+}
