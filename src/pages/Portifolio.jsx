@@ -131,7 +131,6 @@ function Portifolio() {
           <div className="hero-meta">
             <span><strong>03</strong> projetos autorais</span>
             <span><strong>13</strong> tecnologias</span>
-            <span><strong>∞</strong> curiosidade</span>
           </div>
         </div>
       </div>
