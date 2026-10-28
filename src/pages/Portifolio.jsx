@@ -12,6 +12,7 @@ function Portifolio() {
   const [activeSection, setActiveSection] = useState('inicio')
   const [isLightTheme, setIsLightTheme] = useState(false)
   const [showBackToTop, setShowBackToTop] = useState(false)
+  const [contactStatus, setContactStatus] = useState('')
 
   useEffect(() => {
     let characterIndex = 0
@@ -28,7 +29,7 @@ function Portifolio() {
   }, [])
 
   useEffect(() => {
-    const sections = ['inicio', 'sobre', 'skills', 'projetos']
+    const sections = ['inicio', 'sobre', 'skills', 'projetos', 'contato']
     const sectionObserver = new IntersectionObserver((entries) => {
       const visibleSection = entries
         .filter((entry) => entry.isIntersecting)
@@ -44,6 +45,21 @@ function Portifolio() {
 
     return () => sectionObserver.disconnect()
   }, [])
+
+  const handleContactSubmit = (event) => {
+    event.preventDefault()
+
+    const formData = new FormData(event.currentTarget)
+    const name = formData.get('name')
+    const email = formData.get('email')
+    const message = formData.get('message')
+    const subject = `Contato pelo portfólio de ${name}`
+    const body = `Nome: ${name}\nE-mail: ${email}\n\nMensagem:\n${message}`
+
+    window.location.href = `mailto:bitencourt.lucas@outlook.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`
+    setContactStatus('Seu aplicativo de e-mail foi aberto com a mensagem preenchida.')
+    event.currentTarget.reset()
+  }
 
   useEffect(() => {
     document.documentElement.dataset.theme = isLightTheme ? 'light' : 'dark'
@@ -86,9 +102,9 @@ function Portifolio() {
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label="Voltar ao início"><span className="brand-mark">LB</span><span>.</span></a>
         <nav className="main-nav" aria-label="Navegação principal">
-          {['sobre', 'skills', 'projetos'].map((section) => (
+          {['sobre', 'skills', 'projetos', 'contato'].map((section) => (
             <a className={activeSection === section ? 'active' : ''} href={`#${section}`} key={section}>
-              <span>0{['sobre', 'skills', 'projetos'].indexOf(section) + 1}</span>{section}
+              <span>0{['sobre', 'skills', 'projetos', 'contato'].indexOf(section) + 1}</span>{section}
             </a>
           ))}
         </nav>
@@ -262,6 +278,39 @@ function Portifolio() {
       </section>
       </main>
 
+      <section className="contact-section reveal-on-scroll" id="contato">
+        <div className="contact-intro">
+          <p className="section-kicker">04 / VAMOS CONVERSAR</p>
+          <div className="section-heading">
+            <h2>Entre em contato</h2>
+            <span className="section-index">04</span>
+          </div>
+          <p className="contact-description">
+            Tem um projeto em mente, uma oportunidade ou só quer trocar uma ideia?
+            Envie uma mensagem e eu retorno assim que possível.
+          </p>
+          <a className="contact-email" href="mailto:bitencourt.lucas@outlook.com">
+            bitencourt.lucas@outlook.com ↗
+          </a>
+        </div>
+        <form className="contact-form" onSubmit={handleContactSubmit}>
+          <label>
+            Nome
+            <input name="name" type="text" placeholder="Como posso te chamar?" required />
+          </label>
+          <label>
+            E-mail
+            <input name="email" type="email" placeholder="voce@email.com" required />
+          </label>
+          <label className="contact-message">
+            Mensagem
+            <textarea name="message" rows="5" placeholder="Conte um pouco sobre o que você precisa..." required />
+          </label>
+          <button className="contact-submit" type="submit">Abrir meu e-mail ↗</button>
+          {contactStatus && <p className="contact-status" role="status">{contactStatus}</p>}
+        </form>
+      </section>
+
       <footer>
         <div className="footer-content">
           <div>
@@ -272,6 +321,7 @@ function Portifolio() {
             <a href="#inicio">Início</a>
             <a href="#sobre">Sobre</a>
             <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
             <a href="https://www.linkedin.com/in/bitencourtlucas/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
             <a href="https://github.com/Lkzin0122" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </nav>
